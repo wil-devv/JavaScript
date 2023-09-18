@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de strings</title>
+    
+    <style>
+        body {
+            background-color: gray;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.writeln(`Seu nome tem ${nome.length} letras! <br/>`) 
+        document.writeln(`Seu nome ${nome.toUpperCase()} em maiúsculas <br/>`)
+        document.writeln(`Seu nome ${nome.toLowerCase()} em minúsculas <br/>`)
+    </script>
+</body>
+</html>
