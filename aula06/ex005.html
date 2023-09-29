@@ -19,13 +19,13 @@
 <body>
     <h1>Trabalhando com Dados v2.0</h1>
     <button onclick="clicou ()"> Clique aqui para começar!</button>
-    <p>Clique no botão, e veja a mágica acontecer</p>
+    <p id="msg">Clique no botão, e veja a mágica acontecer</p>
 
     <script>
-        var nome = window.prompt('Qual o seu nome?')
 
         function clicou () {
-            window.alert(`É um prazer te conhecer ${nome}`)
+            var nome = window.prompt('Qual o seu nome?')
+            window.document.getElementById('msg').innerHTML = (`Olá <strong> ${nome} </strong>! é um prazer te conhecer.`)
         }
     </script>
 
