@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiscalização Aduaneira</title>
+    <style>
+        body {
+            background-color: rgb(78, 140, 227);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seja bem-vindo (a) a fiscalização aduaneira</h1>
+
+    Digite o valor do seu produto ; <input type="number" name="val1" id="val1"> R$ <input type="button" value="Confirmar" onclick= "calcular ()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function calcular () {
+            var valor = window.document.querySelector('input#val1')
+            var res = window.document.querySelector('div#res')
+            var val = Number(valor.value)
+            res.innerHTML =`<p>O valor do seu produto é de <strong> ${val} R$</strong> </p> `
+            if (val > 50) {
+                res.innerHTML += ` <p> Você foi <strong> TAXADO! </strong> </p>`
+                document.body.style.backgroundColor = 'red'
+            } else {
+                res.innerHTML = '<p>Liberado pela Alfândega! </p>'
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
