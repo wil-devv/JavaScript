@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro codigo em JS.</title>
-
+    <title>Meu primeiro programa</title>
     <style>
         body {
-            background-color: steelblue;
-            color: black;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: slategrey;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+        h1 {
+            color: aquamarine;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Este é meu primeiro código em JavaScript!</p>
-
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
     <script>
-        var n1 = Number(window.prompt ('Digite um número'))
-        var n2 = Number(window.prompt('Digite outro numero'))
+        var n1 = Number(window.prompt('Digite um número :'))
+        var n2 = Number(window.prompt('Digite outro número :'))
         var s = n1 + n2
-        window.alert(`A soma dos valores de ${n1} e ${n2} é ${s}`)
-
-        // (number + number) usa-se para adição.
-        // (string + string) usa-se para concatenação.
+        window.alert('A soma dos números é ' + s)
     </script>
 </body>
 </html>
